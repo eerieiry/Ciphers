@@ -1,0 +1,20 @@
+﻿<Window x:Class="Ciphers.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ciphers"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Icon="/Private.png">
+    <Grid>
+        <StackPanel Margin="10">
+            <TextBlock Text="Шифри" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center"/>
+            <Border BorderBrush="White" BorderThickness="1" Height="9" Width="780" RenderTransformOrigin="0.5,0.5" IsEnabled="False"/>
+            <Button Content="Шифр Цезаря" Click="CeasarCipher_Open_Click" Height="40" Margin="0,0,0,10"/>
+            <Button Content="Квадрат Полібія" Click="PolibiusSquare_Open_Click" Height="40" Margin="0,0,0,10"/>
+            <Button Content="Шифр Тритемія" Click="TrithemiusCipher_Open_Click" Height="40"/>
+            <Border BorderBrush="White" BorderThickness="1" Height="9" Width="780" RenderTransformOrigin="0.5,0.5" IsEnabled="False"/>
+            <Button Content="Шифр перестановки" Click="Permutation_Open_Click" Height="40" Margin="0,0,0,10"/>
+        </StackPanel>
+    </Grid>
+</Window>
